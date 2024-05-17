@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Google Search Bypass AI",
     "description": "no-code extension restores Google Search to use Web results by default",
-    "version": "1.0",
+    "version": "1.1",
     "author": "Rob McVey <me@robmcvey.comn>",
     "permissions": [
       "declarativeNetRequest",
@@ -11,13 +11,10 @@
     "host_permissions": [
         "*://*.google.com/search*"
     ],
-    "background": {
-      "service_worker": "background.js"
-    },
     "declarative_net_request": {
       "rule_resources": [
         {
-          "id": "ruleset_1",
+          "id": "restore_web_first_results",
           "enabled": true,
           "path": "rules.json"
         }
