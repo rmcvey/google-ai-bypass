@@ -9,7 +9,7 @@
       "declarativeNetRequestWithHostAccess"
     ],
     "host_permissions": [
-        "*://*/*"
+        "*://*.google.com/search*"
     ],
     "background": {
       "service_worker": "background.js"
